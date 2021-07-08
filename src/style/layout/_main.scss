@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    width: 100%;
+    background: #ffffff33;
+    padding: 0.5em;
+    border-radius: 16px;
+    margin-top: 16px;
+    font-size: 36px;
+    color: white;
+
+    .snap-frame {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0 0 8px 0;
+        scroll-snap-type: x mandatory;
+
+        .snap-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5em;
+            background: #ffffff33;
+            border-radius: 8px;
+            margin-right: 8px;
+            scroll-snap-align: center;
+
+            @media only screen and (max-width: 500px) {
+                & {
+                    padding: 0.25em;
+                }
+            }
+
+            .block-time {
+                font-weight: 300;
+                font-size: 18px;
+            }
+
+            .block-rain {
+                font-weight: 700;
+                font-size: 16px;
+                color: rgb(86, 86, 167);
+            }
+
+            .block-weather {
+                font-weight: 300;
+                font-size: 21px;
+            }
+
+            .block-temp {
+                font-weight: 300;
+                font-size: 21px;
+            }
+        }
+    }
+}

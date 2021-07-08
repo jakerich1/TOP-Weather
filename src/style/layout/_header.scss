@@ -1,0 +1,130 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #ffffff33;
+    padding: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: white;
+    border-radius: 16px;
+
+    @media only screen and (max-width: 860px) {
+        & {
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        & {
+            padding: 0;
+        }
+    }
+
+    .search-cont {
+        display: flex;
+        align-items: stretch;
+
+        &>* {
+            display: block;
+        }
+
+        @media only screen and (max-width: 860px) {
+            & {
+                margin-top: 0.5em;
+            }
+        }
+
+        span {
+            margin-right: 10px;
+            font-weight: 100;
+
+            @media only screen and (max-width: 500px) {
+                & {
+                    display: none;
+                }
+            }
+        }
+
+        input {
+            width: 270px;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            background: none;
+            font-size: 30px;
+            font-weight: 100;
+            color: #ffffff;
+
+            @media only screen and (max-width: 500px) {
+                & {
+                    width: 200px;
+                    font-size: 20px;
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            border: 1px solid #ffffff;
+            background: none;
+            padding: 0 0.5em;
+            color: #ffffff;
+            font-weight: 100;
+            font-size: 24px;
+            cursor: pointer;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            transition: all 0.15s ease-in-out;
+
+            @media only screen and (max-width: 500px) {
+                & {
+                    font-size: 20px;
+                }
+            }
+
+            &:hover {
+                background: #ffffff33;
+            }
+        }
+    }
+
+    .summary-cont {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 860px) {
+            & {
+                margin-top: 8px;
+            }
+        }
+
+        &>* {
+            display: block;
+            font-weight: 300;
+        }
+
+        .weather-label {
+            font-size: 24px;
+            margin-right: 16px;
+        }
+
+        .temp-label {
+            font-size: 62px;
+            margin-right: 16px;
+
+            @media only screen and (max-width: 500px) {
+                & {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .hilo-label {
+            font-size: 24px;
+        }
+    }
+}

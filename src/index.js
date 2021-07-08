@@ -1,13 +1,17 @@
-import _ from 'lodash';
-import "./style/style.scss";
+import './style/style.scss';
+import header from './components/header';
+import twentyFourHr from './components/main';
+import week from './components/week';
 
 function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-    return element;
-  }
-  
-  document.body.appendChild(component());
+  const container = document.createElement('div');
+  container.classList.add('container');
+
+  container.appendChild(header());
+  container.appendChild(twentyFourHr());
+  container.appendChild(week());
+
+  return container;
+}
+
+document.body.appendChild(component());
