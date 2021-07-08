@@ -1,0 +1,16 @@
+{color:"4a4969",position:0},
+
+{color:"7072ab",position:50},
+
+{color:"cd82a0",position:100}
+
+font-weight: 500;   
+
+API Key 12e3d57611d7008bed26d747d8731449
+
+
+API weather call, use to get coordinates for construction  of the following query
+http://api.openweathermap.org/data/2.5/weather?q=london&appid=12e3d57611d7008bed26d747d8731449
+
+API get all need coordinates of the city first
+https://api.openweathermap.org/data/2.5/onecall?lat=51.5085&lon=-0.1257&exclude=minutely&appid=12e3d57611d7008bed26d747d8731449

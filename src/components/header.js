@@ -12,11 +12,13 @@ export default function header() {
 
   const searchInput = document.createElement('input');
   searchInput.type = 'text';
+  searchInput.id = 'sInput';
   searchInput.placeholder = 'Enter city name';
   searchContainer.appendChild(searchInput);
 
   const searchButton = document.createElement('button');
   searchButton.innerText = 'search';
+  searchButton.id = 'sButton';
   searchContainer.appendChild(searchButton);
 
   headerContainer.appendChild(searchContainer);
