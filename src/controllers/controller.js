@@ -31,7 +31,7 @@ const controller = (function factory() {
       throw new Error('Empty input');
     } else {
       DOMcontroller.setLoading();
-      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=12e3d57611d7008bed26d747d8731449`, {
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=12e3d57611d7008bed26d747d8731449`, {
         mode: 'cors',
       });
       const baseData = await response.json();
